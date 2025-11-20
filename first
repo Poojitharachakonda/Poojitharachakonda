@@ -1,0 +1,1 @@
+SELECT first_name, last_name, 'Employee' as role FROM employees UNION SELECT m.first_name, m.last_name, 'Manager' as role FROM employees e JOIN employees m ON e.manager_id = m.employee_id ORDER BY last_name;
